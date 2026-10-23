@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="User.quote">
+  <p>{{ User.quote }}</p>
+  <p [hidden]="ageMasque">{{User.age}}</p>
+  <p>{{ User.name }} {{User.firstName}}</p>
+  <button (click)="ageMasque = !ageMasque">Masquer l'âge</button>
